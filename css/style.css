@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --backp-font-size: 78%;
+}
 
 ul {
   list-style-type: none;
@@ -261,6 +264,7 @@ box-shadow: -1px -1px 12px 1px rgba(154,16,162,0.7);
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
+ display: grid;
 }
 
 .maincontainer  .back {
@@ -274,7 +278,7 @@ box-shadow: -1px -1px 12px 1px rgba(154,16,162,0.7);
  }
 
  .back p {
-  font-size: 0.62rem;
+  font-size: var(--backp-font-size);
  }
 
  .front .ico-wrap {
@@ -384,3 +388,16 @@ border-radius: 20px;
   width: 80px;
   cursor: pointer;
 }
+
+#intro .navbar-toggler-icon  {
+filter: invert(1);
+}
+
+
+ @media (min-width: 768px) {
+ :root {
+  --backp-font-size: 64%
+ }
+
+  
+ }
